@@ -51,7 +51,7 @@ $(function(){
 		<p> <br>
 		</p>
 
-		<p><font face="Times New Roman" size="4"> [<a href="#research">Research Interests</a>] | [<a href="#pub">Publication</a>] |  [<a href="#PA">Professional Activities</a>] |[<a href="#edu">Education</a>] | [<a href="#AH">Awards and Honors</a>] | [<a href="#CODE">Source Code</a>]| [<a href="#Ms">Miscellaneous</a>]  |  [<a href="CV_LeiHuang.pdf">CV</a>] </p>
+		<p><font face="Times New Roman" size="4">  [<a href="#pub">Publication</a>] |  [<a href="#PA">Professional Activities</a>] | [<a href="#SS">Students</a>] |[<a href="#TC">Teaching</a>] |[<a href="#edu">Education</a>] | [<a href="#AH">Awards and Honors</a>] | [<a href="#CODE">Source Code</a>]| [<a href="#Ms">Miscellaneous</a>]  |  [<a href="CV_LeiHuang.pdf">CV</a>] </p>
 	</div>
 	<div id="pic">
 		<img src="./LeiHuang.jpg">
@@ -60,7 +60,7 @@ $(function(){
 
 
 <div id ="bio">
-  Lei Huang  received his BSc and PhD degrees under supervision of Prof. <a href="http://sites.nlsde.buaa.edu.cn/~liwei">Wei Li</a>, respectively in 2010 and 2018, at the School of Computer Science and Engineering, Beihang University, China. From 2015 to 2016, he visited the Vision and Learning Lab, University of Michigan, Ann Arbor, as a joint PhD student supervised by Prof. <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. During 2018 to 2020, he was a research scientist in Inception Institute of Artifical Intelligence (IIAI), UAE. His current research mainly focuses on normalization techniques (involving methods, theories and applications) in training DNNs. He also has wide interests in deep learning  theory (representation & optimization)  and computers vision tasks. He serves as a reviewer for the top conferences and journals such as CVPR, ICML, ICCV, ECCV, NeurIPS, AAAI, JMLR, IJCV, TNNLS, etc.
+  Lei Huang  received his BSc and PhD degrees under supervision of Prof. <a href="http://sites.nlsde.buaa.edu.cn/~liwei">Wei Li</a>, respectively in 2010 and 2018, at the School of Computer Science and Engineering, Beihang University, China. From 2015 to 2016, he visited the Vision and Learning Lab, University of Michigan, Ann Arbor, as a joint PhD student supervised by Prof. <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. During 2018 to 2020, he was a research scientist in Inception Institute of Artifical Intelligence (IIAI), UAE. His current research mainly focuses on normalization techniques (involving methods, theories and applications) in training DNNs. He also has wide interests in deep learning  theory (representation & optimization)  and computers vision tasks. He serves as a reviewer for the top conferences and journals such as CVPR, ICML, ICCV, ECCV, NeurIPS, AAAI, JMLR, TPAMI, IJCV, TNNLS, etc.
 
 
 
@@ -94,123 +94,55 @@ $(function(){
 
 
 
-<h3>Research Interests<a name="research"></a></h3>
-<ul>
-   <li><font face="Times New Roman"><strong>Machine Learning and Computer Vision</strong>:</font> 
-   <font face="Times New Roman">Normalization Techniques and Optimization on Deep Learning</font>,
-   <font face="Times New Roman"> Semi-Supervised Learning, Active Learning</font>,  <font face="Times New Roman">Manifold Learning</font>, 
-   <font face="Times New Roman">Adversarial Examples</font>, 
-   <font face="Times New Roman">Kernel Methods, Image Translation, Human Pose Estimation</font>
-  </li>
-   <li><font face="Times New Roman"><strong>Multimedia Content Analysis and Image Retrieval</strong>:</font> <font face="Times New Roman">Large Scale Annotation, Hash Based Nearest Neighbor Search</font>
-  </li>
-
-</ul>
-
-
-<!-- ---------------------- Education ---------------->
-<div id="publications">
+<h3>Publications<a name="publication"></a></h3>
+I am addicted to understanding and debugging the training of DNNs. I believe one avenue is delving into the  basic modules of DNNs, e.g., normalization layer and linear layer. 
+My contributions for the community are mainly on designing and understanding these basic modules and their compound for the training dynamics of DNNs (* indicates corresponding authors). 
 
 
 <!-- ---------------------- Publications ------------------------------------------------->
 
 <hr/>
 <h3>Selected papers<a name="pub"></a> | <a href="./publication.html"><font color="#0088CC">All paper list</font></a> </h3>
-
+<hr/>
+<ul>
+  <li><p><font face="Times New Roman" size="5.5"> Normalization layer (Algorithms and Analyses): </font></p></li>
+</ul>
+   	<div class="paper">
+                <div class="pimg"><img src="./img/NormSurvey.png" width="120"></div>
+		<div class="ptitle">Normalization Techniques in Training DNNs: Methodology, Analysis and Application </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>,  Jie Qin, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
+		<div class="pvenue">arXiv:2009.12836</div>
+                <div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2009.12836">[Paper]</a></div>
+		</div>
+	</div>  
    	<div class="paper">
                 <div class="pimg"><img src="./img/CVPR2022_XBNBlock.png" width="120"></div>
 		<div class="ptitle">Delving into the Estimation Shift of Batch Normalization in a Network. </div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Yi Zhou, Tian Wang, Jie Luo, Xianglong Liu. </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>, Yi Zhou, Tian Wang, Jie Luo, Xianglong Liu. </div>
         <div class="pvenue">CVPR 2022</div>
 	         <div class="plinks">
 			<div class="plink"><a href="https://arxiv.org/abs/2203.10778">[Paper]</a></div>
 			<div class="plink"><a href="https://github.com/huangleiBuaa/XBNBlock">[Code]</a></div>
 		</div>
 	</div>  
-
-   	<div class="paper">
-                <div class="pimg"><img src="./img/NeurIPS2021.png" width="120"></div>
-		<div class="ptitle">Rot-Pro: Modeling Transitivity by Projection in Knowledge Graph Embedding. </div>
-		<div class="pauthors">Tengwei Song, Jie Luo, <strong>Lei Huang</strong>. </div>
-        <div class="pvenue">NeurIPS 2021</div>
-	         <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2110.14450">[Paper]</a></div>
-			<div class="plink"><a href="https://github.com/tewiSong/Rot-Pro">[Code]</a></div>
-		</div>
-	</div>  
-
-   	<div class="paper">
-                <div class="pimg"><img src="./img/GBN.png" width="120"></div>
-		<div class="ptitle">Towards Defending Multiple Adversarial Perturbations via Gated Batch Normalization </div>
-		<div class="pauthors">Aishan Liu, Shiyu Tang, Xianglong Liu, Xinyun Chen, <strong>Lei Huang</strong>, Zhuozhuo Tu, Dawn Song, Dacheng Tao </div>
-		<div class="pvenue">arXiv:2012.01654</div>
-                <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2012.01654">[Paper]</a></div>
-		</div>
-	</div>  
-
-   	<div class="paper">
-                <div class="pimg"><img src="./img/NormSurvey.png" width="120"></div>
-		<div class="ptitle">Normalization Techniques in Training DNNs: Methodology, Analysis and Application </div>
-		<div class="pauthors"><strong>Lei Huang</strong>,  Jie Qin, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
-		<div class="pvenue">arXiv:2009.12836</div>
-                <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2009.12836">[Paper]</a></div>
-		</div>
-	</div>     
-
+   
 	 <div class="paper">
 	  <div class="pimg"><img src="./img/CVPR2021.png" width="120"></div>
 		<div class="ptitle">Group Whitening: Balancing Learning Efficiency and Representational Capacity </div>
-		<div class="pauthors"><strong>Lei Huang</strong>,  Yi Zhou,  Li Liu,  Fan Zhu, Ling Shao </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>,  Yi Zhou,  Li Liu,  Fan Zhu, Ling Shao </div>
 		<div class="pvenue">CVPR 2021, arXiv:2009.13333</div>
                 <div class="plinks">
 			<div class="plink"><a href="https://arxiv.org/abs/2009.13333">[Paper]</a></div>
 			<div class="plink"><a href="https://github.com/huangleiBuaa/GroupWhitening">[Code]</a></div>
 		</div>
 	</div>   
-	<div class="paper">
-                <div class="pimg"><img src="./img/ECCV2020.png" width="120"></div>
-		<div class="ptitle">Layer-wise Conditioning Analysis in Exploring the Learning Dynamics of DNNs </div>
-		<div class="pauthors"><strong>Lei Huang</strong>,  Jie Qin, Li Liu, Fan Zhu, Ling Shao </div>
-		<div class="pvenue">ECCV 2020 (Oral)</div>
-                <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2002.10801">[Paper]</a></div>
-	               <div class="plink"><a href="https://github.com/huangleiBuaa/LayerwiseCA">[Code]</a></div>
-                       <div class="plink"><a href="https://drive.google.com/file/d/1roy2kttivUDDxcX4qoYigsZTXAPInvh6/view?usp=sharing">[Slides]</a></div>
-                       <div class="plink"><a href="https://drive.google.com/file/d/1R34ITL07qMeCZ43LkS65eZgoHBl8ZUo_/view?usp=sharing">[Video Presentation]</a></div>
-		</div>
-	</div> 
-
-
-	<div class="paper">
-		<div class="ptitle">On the Number of Linear Regions of Convolutional Neural Networks </div>
-		<div class="pauthors">Huan Xiong, <strong>Lei Huang</strong>, Mengyang Yu, Li Liu,  Fan Zhu, Ling Shao </div>
-		<div class="pvenue">ICML 2020 </div>
-                <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2006.00978v1">[Paper]</a></div>
-                        <div class="plink"><a href="https://github.com/huangleiBuaa/LRCount-CNN">[Code]</a></div>
-		</div>
-                <div class="pvenue"> (Deep Learning Theory)</div>
-	</div>
-	<div class="paper">
-		<div class="pimg"><img src="./img/CVPR2020_ONI.png"></div>
-		<div class="ptitle">Controllable Orthogonalization in Training DNNs </div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Li Liu,  Fan Zhu, Diwen Wan, Zehuan Yuan, Bo Li, Ling Shao </div>
-		<div class="pvenue">CVPR 2020 (Oral,  <font color="#991100"><b>Best Paper Nomination</b></font> ) </div>
-                <div class="plinks">
-			<div class="plink"><a href="https://arxiv.org/abs/2004.00917">[Paper]</a></div>
-			<div class="plink"><a href="https://github.com/huangleiBuaa/ONI">[Code]</a></div>
-                       <div class="plink"><a href="https://drive.google.com/file/d/1-cjuAvXYp8040Z_V5iRQwF1XZerUvtTK/view?usp=sharing">[Slides]</a></div>
-                       <div class="plink"><a href="https://drive.google.com/file/d/12q3C_5jHrlRK-dqT5QSJccuHR5zYxRq5/view?usp=sharing">[Video Presentation]</a></div>
-		</div>
-	</div>
-
+	
 	<div class="paper">
 		<div class="pimg"><img src="./img/CVPR2020_Whitening.png"></div>
 		<div class="ptitle">An Investigation into the Stochasticity of Batch Whitening </div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Lei Zhao, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
-		<div class="pvenue">CVPR 2020 (Oral)</div>
+		<div class="pauthors"><strong>Lei Huang*</strong>, Lei Zhao, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
+		<div class="pvenue">CVPR 2020 (<strong>Oral</strong>)</div>
                 <div class="plinks">
 			<div class="plink"><a href="https://arxiv.org/abs/2003.12327">[Paper]</a></div>
 			<div class="plink"><a href="https://github.com/huangleiBuaa/StochasticityBW">[Code]</a></div>
@@ -218,23 +150,10 @@ $(function(){
                        <div class="plink"><a href="https://drive.google.com/file/d/1SsKO2W9WIMk0sX2lXXQofBExi0kba_ld/view?usp=sharing">[Video Presentation]</a></div>
 		</div>
 	</div>
-
-
-	<div class="paper">
-		<div class="pimg"><img src="./img/ECAI2020_Cap.png"></div>
-		<div class="ptitle">An Efficient Agreement Mechanism in CapsNets By Pairwise Product </div>
-		<div class="pauthors">Lei Zhao, Xiaohui Wang, <strong>Lei Huang</strong> </div>
-		<div class="pvenue">ECAI 2020 </div>
-                <div class="plinks">
-			<div class="plink"><a href="./papers/ECAI_2020.pdf">[Paper]</a></div>
-			<div class="plink"><a href="https://github.com/bhneo/FMRouting">[Code]</a></div>
-		</div>
-	</div>
-
 	<div class="paper">
 		<div class="pimg"><img src="./img/IterNorm.png"></div>
 		<div class="ptitle">Iterative Normalization: Beyond Standardization towards Efficient Whitening </div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>, Yi Zhou,  Fan Zhu, Li Liu, Ling Shao </div>
 		<div class="pvenue">CVPR 2019 </div>
                 <div class="plinks">
 			<div class="plink"><a href="https://arxiv.org/abs/1904.03441">[Paper]</a></div>
@@ -242,23 +161,11 @@ $(function(){
 			<div class="plink"><a href="./bibtex/cvpr2019_IterNorm.bib">[bibtex]</a></div>
 		</div>
 	</div>
-	
-	<div class="paper">
-		<div class="pimg"><img src="./img/SSL_CVPR.png"></div>
-		<div class="ptitle">Collaborative Learning of Semi-Supervised Segmentation and Classification for Medical Images </div>
-		<div class="pauthors">Yi Zhou, Xiaodong He, <strong>Lei Huang</strong>, Li Liu, Fan Zhu, Shanshan cui, Ling Shao</div>
-		<div class="pvenue">CVPR 2019</div>
-                <div class="plinks">
-			<div class="plink"><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhou_Collaborative_Learning_of_Semi-Supervised_Segmentation_and_Classification_for_Medical_Images_CVPR_2019_paper.pdf">[Paper]</a></div>
-		</div>
-	</div>
-
-
 
 	<div class="paper">
 		<div class="pimg"><img src="./img/DBN.jpg"></div>
 		<div class="ptitle">Decorrelated Batch Normalization </div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Dawei Yang, Bo Lang, Jia Deng </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>, Dawei Yang, Bo Lang, Jia Deng </div>
 		<div class="pvenue">CVPR 2018 </div>
 		<div class="plinks">
 			<div class="plink"><a href="./papers/CVPR2018-DBN.pdf">[Paper]</a></div>
@@ -268,13 +175,31 @@ $(function(){
 			<div class="plink"><a href="./bibtex/cvpr2018_dbn.bib">[bibtex]</a></div>
 		</div>
 	</div>
+	
+<hr/>	
+<ul>
+  <li><p><font face="Times New Roman" size="5.5"> Linear layer with constraints: </font></p></li>
+</ul>
+	<div class="paper">
+		<div class="pimg"><img src="./img/CVPR2020_ONI.png"></div>
+		<div class="ptitle">Controllable Orthogonalization in Training DNNs </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>, Li Liu,  Fan Zhu, Diwen Wan, Zehuan Yuan, Bo Li, Ling Shao </div>
+		<div class="pvenue">CVPR 2020 (<strong>Oral</strong>,  <font color="#991100"><b>Best Paper Nomination</b></font> ) </div>
+                <div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2004.00917">[Paper]</a></div>
+			<div class="plink"><a href="https://github.com/huangleiBuaa/ONI">[Code]</a></div>
+                       <div class="plink"><a href="https://drive.google.com/file/d/1-cjuAvXYp8040Z_V5iRQwF1XZerUvtTK/view?usp=sharing">[Slides]</a></div>
+                       <div class="plink"><a href="https://drive.google.com/file/d/12q3C_5jHrlRK-dqT5QSJccuHR5zYxRq5/view?usp=sharing">[Video Presentation]</a></div>
+		</div>
+	</div>
+
 
 
 	<div class="paper">
 		<div class="pimg"><img src="./img/own.jpg"></div>
 		<div class="ptitle">Orthogonal Weight Normalization: Solution to Optimization over Multiple Dependent Stiefel Manifolds in Deep Neural Networks</div>
-		<div class="pauthors"><strong>Lei Huang</strong>,  Xianglong Liu, Bo Lang, Admas Wei Yu, Bo Li</div>
-		<div class="pvenue">AAAI 2018 (Oral), (arXiv:1709.06079)</div>
+		<div class="pauthors"><strong>Lei Huang*</strong>,  Xianglong Liu, Bo Lang, Admas Wei Yu, Bo Li</div>
+		<div class="pvenue">AAAI 2018 (<strong>Oral</strong>), (arXiv:1709.06079)</div>
 		<div class="plinks">
 			<div class="plink"><a href="https://arxiv.org/abs/1709.06079">[Paper]</a></div>
 			<div class="plink"><a href="https://github.com/huangleiBuaa/OthogonalWN">[Code]</a></div>
@@ -287,12 +212,54 @@ $(function(){
 	<div class="paper">
 		<div class="pimg"><img src="./img/NormP.jpg"></div>
 		<div class="ptitle">Projection Based Weight Normalization for Deep Neural Networks </div>
-		<div class="pauthors"><strong>Lei Huang</strong>,  Xianglong Liu, Bo Lang,  Bo Li</div>
-		<div class="pvenue">preprint (arXiv:1710.02338)</div>
+		<div class="pauthors"><strong>Lei Huang*</strong>,  Xianglong Liu, Bo Lang,  Bo Li</div>
+		<div class="pvenue">preprint (arXiv:1710.02338), Pattern Recognition 2020</div>
 		<div class="plinks">
           <div class="plink"><a href="https://arxiv.org/abs/1710.02338">[Paper]</a></div>
 		  <div class="plink"><a href="https://github.com/huangleiBuaa/NormProjection">[Code]</a></div>
 			<div class="plink"><a href="./bibtex/arxiv2017_NormP.bib">[bibtex]</a></div>
+		</div>
+	</div>
+
+  
+	<div class="paper">
+		<div class="pimg"><img src="./img/iccv2017.jpg"></div>
+		<div class="ptitle">Centered Weight Normalization in Accelerating Training of Deep Neural Networks</div>
+		<div class="pauthors"><strong>Lei Huang</strong>, Xianglong Liu*, Yang Liu, Bo Lang, Dacheng Tao</div>
+		<div class="pvenue">IEEE ICCV, 2017</div>
+		<div class="plinks">
+			<div class="plink"><a href="./papers/ICCV2017_camera.pdf">[Paper]</a></div>
+			<div class="plink"><a href="./papers/ICCV2017_sup.pdf">[SupplementaryMaterial]</a></div>
+			<div class="plink"><a href="https://github.com/huangleiBuaa/CenteredWN">[Code]</a></div>
+	               <div class="plink"><a href="./poster/ICCV2017_poster.pdf">[Poster]</a></div>
+			<div class="plink"><a href="./bibtex/iccv2017.bib">[bibtex]</a></div>
+		</div>
+	</div>
+	
+	<hr/>	
+<ul>
+  <li><p><font face="Times New Roman" size="5.5"> Understanding the representation and training of DNNs.: </font></p></li>
+</ul>		
+	<div class="paper">
+                <div class="pimg"><img src="./img/ECCV2020.png" width="120"></div>
+		<div class="ptitle">Layer-wise Conditioning Analysis in Exploring the Learning Dynamics of DNNs </div>
+		<div class="pauthors"><strong>Lei Huang*</strong>,  Jie Qin, Li Liu, Fan Zhu, Ling Shao </div>
+		<div class="pvenue">ECCV 2020 (Oral)</div>
+                <div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2002.10801">[Paper]</a></div>
+	               <div class="plink"><a href="https://github.com/huangleiBuaa/LayerwiseCA">[Code]</a></div>
+                       <div class="plink"><a href="https://drive.google.com/file/d/1roy2kttivUDDxcX4qoYigsZTXAPInvh6/view?usp=sharing">[Slides]</a></div>
+                       <div class="plink"><a href="https://drive.google.com/file/d/1R34ITL07qMeCZ43LkS65eZgoHBl8ZUo_/view?usp=sharing">[Video Presentation]</a></div>
+		</div>
+	</div> 
+
+	<div class="paper">
+		<div class="ptitle">On the Number of Linear Regions of Convolutional Neural Networks </div>
+		<div class="pauthors">Huan Xiong, <strong>Lei Huang</strong>, Mengyang Yu, Li Liu,  Fan Zhu, Ling Shao </div>
+		<div class="pvenue">ICML 2020 </div>
+                <div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2006.00978v1">[Paper]</a></div>
+                        <div class="plink"><a href="https://github.com/huangleiBuaa/LRCount-CNN">[Code]</a></div>
 		</div>
 	</div>
 	
@@ -307,130 +274,41 @@ $(function(){
 	</div>
 	
 
-  
-  
-	<div class="paper">
-		<div class="pimg"><img src="./img/iccv2017.jpg"></div>
-		<div class="ptitle">Centered Weight Normalization in Accelerating Training of Deep Neural Networks</div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Xianglong Liu, Yang Liu, Bo Lang, Dacheng Tao</div>
-		<div class="pvenue">IEEE ICCV, 2017</div>
-		<div class="plinks">
-			<div class="plink"><a href="./papers/ICCV2017_camera.pdf">[Paper]</a></div>
-			<div class="plink"><a href="./papers/ICCV2017_sup.pdf">[SupplementaryMaterial]</a></div>
-			<div class="plink"><a href="https://github.com/huangleiBuaa/CenteredWN">[Code]</a></div>
-	               <div class="plink"><a href="./poster/ICCV2017_poster.pdf">[Poster]</a></div>
-			<div class="plink"><a href="./bibtex/iccv2017.bib">[bibtex]</a></div>
-		</div>
-	</div>
-	
-	<div class="paper">
-		<div class="pimg"><img src="./img/GraphConv.jpg"></div>
-		<div class="ptitle">DGCNN: Disordered Graph Convolutional Neural Network Based on the Gaussian Mixture Model</div>
-		<div class="pauthors">Bo Wu, Yang Liu, Bo Lang, <strong>Lei Huang</strong></div>
-		<div class="pvenue">Neurocomputing, 2018 (arXiv:1712.03563)</div>
-	</div>
-
-	<!---<div class="paper">
-		<div class="pimg"><img src="./img/ICONIP2017.jpg"></div>
-		<div class="ptitle">Learning Joint Multimodal Representation Based on Multi-fusion Deep Neural Networks</div>
-		<div class="pauthors">Zepeng Gu, Bo Lang, Tongyu Yue, <strong>Lei Huang</strong></div>
-		<div class="pvenue">The 24th International Conference on
- Neural Information Processing (ICONIP 2017), (Oral)</div>
-	</div>--->
-	
-	
-	<div class="paper">
-		<div class="pimg"><img src="./img/tip2016.jpg"></div>
-		<div class="ptitle">Query-adaptive hash code ranking for large-scale multi-view visual search</div>
-		<div class="pauthors">Xianglong Liu, <strong>Lei Huang</strong>, Cheng Deng, Bo Lang, Dacheng Tao</div>
-		<div class="pvenue">IEEE Transactions on Image Processing (TIP). 2016</div>
-	</div>
-	<!---<div class="paper">
-		<div class="pimg"><img src="./img/nero2016.jpg"></div>
-		<div class="ptitle">A Novel Rotation Adaptive Object Detection Method Based on Pair Hough Model</div>
-		<div class="pauthors">Yang Liu, <strong>Lei Huang</strong>,  Xianglong Liu, Bo Lang</div>
-		<div class="pvenue">Neurocomputing, 2016</div>
-	</div>--->
-	
-	<!---<div class="paper">
-		<div class="pimg"><img src="./img/ICPR2016.jpg"></div>
-		<div class="ptitle">Efficient Segmentation for Region-based Image Retrieval Using Edge Integrated Minimum Spanning Tree</div>
-		<div class="pauthors">Yang Liu, <strong>Lei Huang</strong>, Siqi Wang, Xianglong Liu, Bo Lang</div>
-		<div class="pvenue">ICPR 2016</div>
-	</div>--->
-
-	<div class="paper">
-		<div class="pimg"><img src="./img/iccv2015.jpg"></div>
-		<div class="ptitle">Multi-View Complementary Hash Tables for Nearest Neighbor Search</div>
-		<div class="pauthors">Xianglong Liu, <strong>Lei Huang</strong>, Cheng Deng, Jiwen Lu, Bo Lang</div>
-		<div class="pvenue">IEEE ICCV, 2015</div>
-		<div class="plinks">
-			<div class="plink"><a href="./papers/iccv2015.pdf">[Paper]</a></div>
-			<div class="plink"><a href="./poster/iccv2015_poster.pdf">[Poster]</a></div>
-			<div class="plink"><a href="./poster/iccv2015_spotlight.mp4">[Spotlight]</a></div>
-			<div class="plink"><a href="./bibtex/iccv2015.bib">[bibtex]</a></div>
-		</div>
-	</div>
-	
-
-	<div class="paper">
-		<div class="pimg"><img src="./img/icme2014.jpg"></div>
-		<div class="ptitle">Graph-based Active Semi-supervised Learning: a New Perspective for Relieving Multi-class Annotation Labor</div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Yang Liu, Xianglong Liu, Xindong Wang, Bo Lang</div>
-		<div class="pvenue">IEEE ICME, 2014</div>
-		<div class="plinks">
-			<div class="plink"><a href="./papers/ICME_2014.pdf">[Paper]</a></div>
-			<div class="plink"><a href="./poster/ICME_2014_poster.pdf">[Poster]</a></div>
-			<div class="plink"><a href="https://github.com/huangleiBuaa/Active-GBSSL">[Code]</a></div>
-			<div class="plink"><a href="./bibtex/icme2014.bib">[bibtex]</a></div>
-		</div>
-                <div class="pvenue">Journal extension: A general non-parametric active learning framework for classification on multiple manifolds, Pattern Recognition Letters, 2019</div>
-	</div>
- 	
-
-	
-	 <div class="paper">
-		<div class="pimg"><img src="./img/icme2013.jpg"></div>
-		<div class="ptitle">Efficient Semi-supervised Annotation with Proxy-based Local Consistency Propagation</div>
-		<div class="pauthors"><strong>Lei Huang</strong>, Yang Wang, Xianglong Liu, Bo Lang</div>
-		<div class="pvenue">IEEE ICME, 2013</div>
-		<div class="plinks">
-			<div class="plink"><a href="./papers/ICME_2013.pdf">[Paper]</a></div>
-			<div class="plink"><a href="./poster/ICME_2013_poster.pdf">[Poster]</a></div>	
-			<div class="plink"><a href="./bibtex/icme2013.bib">[bibtex]</a></div>
-		</div>
-                <div class="pvenue">Journal extension: Online Semi-Supervised Annotation via Proxy-based Local Consistency Propagation, Neurocomputing, 2014</div>
-	</div> 
-	
-</div>	
-
-<hr/>
-<h3>Talk Slides<a name="Ts"></a></h3>
 
 
-<ul>
-  <li><p><font face="Times New Roman">September 8th, 2018.  Normalization Methods for Training Deep Neural Networks:
-Theory and Practice, ECCV 2018 Tutorial. Munich, Germany.  [<a href="https://sites.google.com/view/normalization-eccv18/schedule">Slides</a>]</font></p></li>
-   <li><p><font face="Times New Roman">August 17th, 2017.  Normalization techiniques in deep learning. Multimedia Signal and Intelligent Information Processing Laboratory, Tsinghua University, Beijing.  [<a href="./slides/Normalization techiniques in deep learning.pdf">Slides</a>]</font></p></li>
-    <li><p><font face="Times New Roman">November 2016- January 2017.  Deep Learning Seminar For graduated students in State Key Laboratory of Software Development Environment, Beihang University, Beijing.  
-	[<a href="./slides/DL_course/1-introduction.pdf">slides1-Introduction</a>]
-	[<a href="./slides/DL_course/2-MLP.pdf">slides2-MLP</a>]
-	[<a href="./slides/DL_course/3-CNN.pdf">slides3-CNN</a>]
-	[<a href="./slides/DL_course/4-RNN.pdf">slides4-RNN</a>]
-	</font></p></li> 
-   
-    <li><p><font face="Times New Roman">November 1th, 2014.  Graph-based active Semi-Supervised Learning: a new perspective for relieving multi-class annotation labor. ICT International Exchange Workshop 2014, Laboratory of Advanced Research B, University of Tsukuba, Japan  [<a href="./slides/ActiveLearning-lei_huang-2014-11-01.pdf">Slides</a>]</font></p></li>
-</ul>
 
 <hr/>
 <h3>Professional Activities<a name="PA"></a></h3>
 
 <ul>
-  <li><p><font face="Times New Roman">Regular Conference Reviewer:NeurIPS2022, ECCV2022, ICML 2022, CVPR 2022, AAAI 2022, NeurIPS2021, ICCV2021, ICML 2021, CVPR 2021, AAAI 2021, WACV 2021, NeurIPS 2020, ACM Multimedia 2020, ECCV2020, IJCAI2020, CVPR2020, AAAI2020, ICCV 2019, CVPR 2019, AAAI 2019, ACM Multimedia 2019</font></p></li>
+  <li><p><font face="Times New Roman">Regular Conference Reviewer: NeurIPS2022,  ECCV2022, ICML 2022, CVPR 2022, AAAI 2022, NeurIPS2021, ICCV2021, ICML 2021, CVPR 2021, AAAI 2021, WACV 2021, NeurIPS 2020, ACM Multimedia 2020, ECCV2020, IJCAI2020, CVPR2020, AAAI2020, ICCV 2019, CVPR 2019, AAAI 2019, ACM Multimedia 2019</font></p></li>
    <li><p><font face="Times New Roman">Journal Reviewer: JMLR, IEEE TPAMI, IJCV, IEEE Transactions on Cybernetics, IEEE Transactions on Neural Networks and Learning Systems, PR.</font></p></li>
   <li><p><font face="Times New Roman">Sub-Reviewer of CVPR 2016, NIPS 2016, IJCAI 2017 </font></p></li>
 </ul>
 
+
+
+<hr/>
+<h3>Students<a name="SS"></a></h3>
+<ul>
+<li><p><font face="Times New Roman">Graduate students officially: Dun su (2021-now), &nbsp &nbsp &nbsp &nbsp  Xi Weng (2022-now), &nbsp &nbsp &nbsp &nbsp Junlong Jia (2022-now)</font></p></li>
+<li><p><font face="Times New Roman">
+Students supervised unofficially: Diwen Wan (Internship in IIAI of UAE between 2018-2020),&nbsp &nbsp &nbsp &nbsp  Lei Zhao (Beihang University, 2019 - now),&nbsp &nbsp &nbsp &nbsp 
+Jiaxi Wang (Tsinghua University, 2020 - now),&nbsp &nbsp &nbsp &nbsp
+Jiawei Zhang (Beihang University, 2021 - now),&nbsp &nbsp &nbsp &nbsp
+Ge Kan (Beihang University, 2021 - now),&nbsp &nbsp &nbsp &nbsp
+Junzhu Mao (Nanjing University of Science and Technology, 2021 - now)
+</font></p></li>
+</ul>
+
+<h3>Teaching<a name="TC"></a></h3>
+<ul>
+<li><p><font face="Times New Roman">Deep Learning (B3J420160), Spring 2022, Beihang University </font></p></li>
+<li><p><font face="Times New Roman">Computer Vision (B3J424120); Machine Learning (B3I423170), Fall 2021, Beihang University</font></p></li>
+</ul>
+
+<hr/>
+<hr/>
 <h3>Education<a name="edu"></a></h3>
 <font size="4" face="Times New Roman">
 <ul>
@@ -462,8 +340,6 @@ Theory and Practice, ECCV 2018 Tutorial. Munich, Germany.  [<a href="https://sit
   </li>
 </ul>
 
-
-
 <hr/>
 <h3>Awards and Honors<a name="AH"></a></h3>
 
@@ -480,7 +356,23 @@ Theory and Practice, ECCV 2018 Tutorial. Munich, Germany.  [<a href="https://sit
 	<li><p><font face="Times New Roman">The Third Class Prize of the 24th National Physics Contest for College Students, 2007. </font></p></li>
 	<li><p><font face="Times New Roman"> The Second Class Scholarship for Excellent Freshman in Beihang University, 2006.</font></p></li>
 </ul>
+<hr/>
+<h3>Talk Slides<a name="Ts"></a></h3>
 
+
+<ul>
+  <li><p><font face="Times New Roman">September 8th, 2018.  Normalization Methods for Training Deep Neural Networks:
+Theory and Practice, ECCV 2018 Tutorial. Munich, Germany.  [<a href="https://sites.google.com/view/normalization-eccv18/schedule">Slides</a>]</font></p></li>
+   <li><p><font face="Times New Roman">August 17th, 2017.  Normalization techiniques in deep learning. Multimedia Signal and Intelligent Information Processing Laboratory, Tsinghua University, Beijing.  [<a href="./slides/Normalization techiniques in deep learning.pdf">Slides</a>]</font></p></li>
+    <li><p><font face="Times New Roman">November 2016- January 2017.  Deep Learning Seminar For graduated students in State Key Laboratory of Software Development Environment, Beihang University, Beijing.  
+	[<a href="./slides/DL_course/1-introduction.pdf">slides1-Introduction</a>]
+	[<a href="./slides/DL_course/2-MLP.pdf">slides2-MLP</a>]
+	[<a href="./slides/DL_course/3-CNN.pdf">slides3-CNN</a>]
+	[<a href="./slides/DL_course/4-RNN.pdf">slides4-RNN</a>]
+	</font></p></li> 
+   
+    <li><p><font face="Times New Roman">November 1th, 2014.  Graph-based active Semi-Supervised Learning: a new perspective for relieving multi-class annotation labor. ICT International Exchange Workshop 2014, Laboratory of Advanced Research B, University of Tsukuba, Japan  [<a href="./slides/ActiveLearning-lei_huang-2014-11-01.pdf">Slides</a>]</font></p></li>
+</ul>
 
 <hr/>
 <h3>Source Code<a name="CODE"></a></h3>
